@@ -168,6 +168,9 @@ button.new-game {
     display: block;
     margin-inline: auto;
     cursor: pointer;
+    color: #262626;
+    font-weight: 500;
+    font-size: large;
 }
 
 .sr-only {
