@@ -29,3 +29,22 @@ npm-debug.log*
 
 # Vercel
 .vercel
+
+# Lock files (ignore if you don't want lockfiles tracked)
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Caches / build / temp
+.cache/
+build/
+*.tmp
+*.swp
+.turbo/
+
+# Editor history
+.history/
+
+# ESLint / other caches
+.eslintcache
+

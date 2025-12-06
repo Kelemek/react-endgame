@@ -89,7 +89,8 @@ span.chip {
 }
 
 span.chip.lost::before {
-    content: "💀";
+    /* Use Unicode escape to avoid file-encoding issues and provide emoji fonts */
+    content: "\01F480";
     position: absolute;
     display: flex;
     align-items: center;
@@ -97,9 +98,12 @@ span.chip.lost::before {
     height: 100%;
     width: 100%;
     font-size: 0.85rem;
+    line-height: 1;
     top: 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.7);
+    /* Prefer system emoji fonts so the glyph renders correctly */
+    font-family: "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", "Hanken Grotesk", Arial, sans-serif;
 }
 
 section.word {
